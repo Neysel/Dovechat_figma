@@ -78,7 +78,7 @@ export function Pricing() {
               }`}
             >
               {plan.highlighted && (
-                <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#4A7FFF] text-white px-4 py-1 rounded-full text-sm font-medium">
+                <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-to-r from-[#FF6B35] to-[#FF8C42] text-white px-4 py-1 rounded-full text-sm font-medium shadow-lg">
                   Популярный
                 </div>
               )}
@@ -103,10 +103,10 @@ export function Pricing() {
                 ))}
               </ul>
 
-              <Button 
+              <Button
                 className={`w-full hover:cursor-pointer ${
-                  plan.highlighted 
-                    ? 'bg-[#4A7FFF] hover:bg-[#3A6FEF] text-white' 
+                  plan.highlighted
+                    ? 'bg-[#FF6B35] hover:bg-[#FF8C42] text-white shadow-lg'
                     : 'bg-white border-2 border-[#4A7FFF] text-[#4A7FFF] hover:bg-[#4A7FFF] hover:text-white'
                 }`}
                 size="lg"

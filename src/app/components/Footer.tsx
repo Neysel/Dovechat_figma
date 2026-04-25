@@ -1,5 +1,4 @@
 import { MessageSquare, Mail, Phone, MapPin } from "lucide-react";
-// import logoImage from "../../assets/logo_without_message.png"
 import logoFaviconImage from "../../assets/logo_favicon_full.png"
 
 export function Footer() {

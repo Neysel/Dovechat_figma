@@ -43,7 +43,7 @@ export function Hero() {
               <Button
                 size="lg"
                 className="bg-[#4A7FFF] hover:bg-[#3A6FEF] text-white h-12 sm:h-14 px-6 sm:px-8 text-base sm:text-lg hover:cursor-pointer w-full sm:w-auto"
-                // onClick={handleStartFree}
+                onClick={handleStartFree}
               >
                 Начать бесплатно
               </Button>
@@ -51,7 +51,7 @@ export function Hero() {
                 size="lg"
                 variant="outline"
                 className="border-2 border-[#4A7FFF] text-[#4A7FFF] hover:bg-[#4A7FFF] hover:text-white h-12 sm:h-14 px-6 sm:px-8 text-base sm:text-lg hover:cursor-pointer w-full sm:w-auto"
-                // onClick={handleDemo}
+                onClick={handleDemo}
               >
                 Связаться с нами
               </Button>
@@ -78,7 +78,8 @@ export function Hero() {
               />
             </div>
             <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-[#4A7FFF]/20 rounded-full blur-3xl"></div>
-            <div className="absolute -top-6 -right-6 w-40 h-40 bg-purple-400/20 rounded-full blur-3xl"></div>
+            <div className="absolute -top-6 -right-6 w-40 h-40 bg-[#FF6B35]/25 rounded-full blur-3xl"></div>
+            <div className="absolute top-1/2 -right-10 w-24 h-24 bg-[#FF8C42]/15 rounded-full blur-2xl"></div>
           </div>
         </div>
       </div>

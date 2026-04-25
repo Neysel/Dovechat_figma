@@ -1,12 +1,10 @@
-import { 
-  MessageSquare, 
-  Users, 
-  BarChart3, 
-  Zap, 
-  Shield, 
+import {
+  MessageSquare,
+  Users,
+  Zap,
+  Shield,
   Clock,
-  Sparkles,
-  Globe
+  Sparkles
 } from "lucide-react";
 
 const features = [
@@ -19,11 +17,6 @@ const features = [
     icon: Users,
     title: "Командная работа",
     description: "Назначайте чаты операторам, отслеживайте нагрузку и повышайте эффективность команды"
-  },
-  {
-    icon: BarChart3,
-    title: "Аналитика и отчеты",
-    description: "Подробная статистика по всем диалогам, времени ответа и качеству обслуживания клиентов"
   },
   {
     icon: Zap,
@@ -44,11 +37,6 @@ const features = [
     icon: Sparkles,
     title: "Умные теги",
     description: "Организуйте чаты с помощью тегов, меток и категорий для быстрого поиска нужных диалогов"
-  },
-  {
-    icon: Globe,
-    title: "Мультиязычность",
-    description: "Поддержка более 30 языков и автоматический перевод сообщений для международных команд"
   }
 ];
 
@@ -66,9 +54,9 @@ export function Features() {
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
           {features.map((feature, index) => (
-            <div 
+            <div
               key={index}
               className="group p-6 rounded-2xl border border-gray-200 hover:border-[#4A7FFF] hover:shadow-lg transition-all duration-300"
             >
