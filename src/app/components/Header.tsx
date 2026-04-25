@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { MessageSquare, Menu, X } from "lucide-react";
 import { Button } from "./ui/button";
-import logoFaviconImage from "../../assets/logo_favicon_full.png"
+import logoMainImage from "../../assets/logo_main.png"
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -12,14 +12,11 @@ export function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-19">
+        <div className="flex items-center justify-between h-16">
           <div className="flex items-center gap-2">
-            <div className="flex items-center gap-2">
-              <a href="#" className="flex items-center gap-2">
-                <img src={logoFaviconImage} alt="DoveChat Logo" className="w-auto h-16" />
-              </a>
-            </div>
-            <span className="hidden sm:block text-sm text-gray-500 ml-8">Платформа-агрегатор</span>
+            <a href="#" className="flex items-center">
+              <img src={logoMainImage} alt="DoveChat Logo" className="w-auto h-[56px]" />
+            </a>
           </div>
 
           <nav className="hidden md:flex items-center gap-8">
