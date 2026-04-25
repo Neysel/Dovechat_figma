@@ -43,7 +43,7 @@ export function Hero() {
               <Button
                 size="lg"
                 className="bg-[#4A7FFF] hover:bg-[#3A6FEF] text-white h-12 sm:h-14 px-6 sm:px-8 text-base sm:text-lg hover:cursor-pointer w-full sm:w-auto"
-                onClick={handleStartFree}
+                // onClick={handleStartFree}
               >
                 Начать бесплатно
               </Button>
@@ -51,7 +51,7 @@ export function Hero() {
                 size="lg"
                 variant="outline"
                 className="border-2 border-[#4A7FFF] text-[#4A7FFF] hover:bg-[#4A7FFF] hover:text-white h-12 sm:h-14 px-6 sm:px-8 text-base sm:text-lg hover:cursor-pointer w-full sm:w-auto"
-                onClick={handleDemo}
+                // onClick={handleDemo}
               >
                 Связаться с нами
               </Button>
