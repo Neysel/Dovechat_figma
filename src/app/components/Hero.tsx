@@ -3,31 +3,48 @@ import { Button } from "./ui/button";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 import { notifications } from "../utils/notifications";
 import exampleImage from "figma:asset/4893b917f1f81f4b059819acbe44b63e135f6d46.png";
+import amoCRMImage from "figma:asset/amoCRM.png";
 
 export function Hero() {
-  const handleStartFree = () => {
-    notifications.success(
-      "Добро пожаловать в DoveChat!",
-      "Начните объединять все ваши мессенджеры в одном месте"
-    );
-  };
+  // const handleStartFree = () => {
+  //   notifications.success(
+  //     "Добро пожаловать в DoveChat!",
+  //     "Начните объединять все ваши мессенджеры в одном месте"
+  //   );
+  // };
 
-  const handleDemo = () => {
-    notifications.info(
-      "Демонстрация функций",
-      "Откройте для себя все возможности DoveChat"
-    );
-  };
+  // const handleDemo = () => {
+  //   notifications.info(
+  //     "Демонстрация функций",
+  //     "Откройте для себя все возможности DoveChat"
+  //   );
+  // };
 
   return (
     <section className="pt-32 pb-20 bg-gradient-to-b from-blue-50 to-white">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8" style={{overflow: "hidden"}}>
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
-            <div className="inline-flex items-center gap-2 bg-blue-100 text-[#4A7FFF] px-4 py-2 rounded-full text-sm font-medium">
-              <Zap className="w-4 h-4" />
-              Все мессенджеры в одном окне
+            {/* <div style={{display: "flex"}}>            */}
+              <div className="inline-flex items-center gap-2 bg-blue-100 text-[#4A7FFF] px-4 py-2 rounded-full text-sm font-medium">
+                <Zap className="w-4 h-4" />
+                Все мессенджеры в одном окне
+              </div>
+
+            <div className="flex gap-8 items-center">
+            <div className="w-50 h-auto ml-2" >
+            <a href="https://logo-teka.com/en/bitrix24/" ><img  src="https://logo-teka.com/wp-content/uploads/2025/06/bitrix24-logo-eng.svg" alt="SVG logo Bitrix24"  /></a>
             </div>
+            <div>
+            <img
+                src={amoCRMImage}
+                alt="DoveChat интерфейс"
+                className="w-50 h-auto"
+              />
+            </div>
+
+            </div>
+             {/* </div> */}
 
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
               Управляйте всеми чатами из{" "}
@@ -36,14 +53,14 @@ export function Hero() {
 
             <p className="text-base sm:text-lg md:text-xl text-gray-600 leading-relaxed">
               DoveChat объединяет WhatsApp, Telegram, Instagram и другие мессенджеры
-              в единый интерфейс для эффективной работы вашей команды
+              в единый интерфейс для эффективной работы вашей команды. <br></br> Все мессенджеры в одном окне с поддержкой интеграции с популярными CRM-системами
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
               <Button
                 size="lg"
                 className="bg-[#4A7FFF] hover:bg-[#3A6FEF] text-white h-12 sm:h-14 px-6 sm:px-8 text-base sm:text-lg hover:cursor-pointer w-full sm:w-auto"
-                onClick={handleStartFree}
+                // onClick={handleStartFree}
               >
                 Начать бесплатно
               </Button>
@@ -51,7 +68,7 @@ export function Hero() {
                 size="lg"
                 variant="outline"
                 className="border-2 border-[#4A7FFF] text-[#4A7FFF] hover:bg-[#4A7FFF] hover:text-white h-12 sm:h-14 px-6 sm:px-8 text-base sm:text-lg hover:cursor-pointer w-full sm:w-auto"
-                onClick={handleDemo}
+                // onClick={handleDemo}
               >
                 Связаться с нами
               </Button>
