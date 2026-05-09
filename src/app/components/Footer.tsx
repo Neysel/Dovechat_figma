@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import { MessageSquare, Mail, Phone, MapPin } from "lucide-react";
 import logoFaviconImage from "../../assets/logo_favicon_full.png"
 
@@ -71,7 +72,7 @@ export function Footer() {
             © 2026 DoveChat. Все права защищены.
           </p>
           <div className="flex flex-wrap gap-4 sm:gap-6 justify-center">
-            <a href="#" className="hover:text-[#4A7FFF] transition-colors">Политика конфиденциальности</a>
+            <Link to="/privacy" className="hover:text-[#4A7FFF] transition-colors">Политика конфиденциальности</Link>
             <a href="#" className="hover:text-[#4A7FFF] transition-colors">Условия использования</a>
           </div>
         </div>
